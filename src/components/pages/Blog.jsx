@@ -7,7 +7,7 @@ export const Blog = () => {
     <>
       <section className='blog'>
         <div className='container'>
-          <Heading title='Blog' />
+          <Heading title='Projects' />
           <div className='content grid3'>
             {blog.map((item) => (
               <div className='box' data-aos='flip-left'>
@@ -17,7 +17,8 @@ export const Blog = () => {
                 <div className='text'>
                   <h3 data-aos='fade-right'>{item.title}</h3>
                   <label data-aos='fade-left'>
-                    By {item.author} {item.date}
+                    Mentored By: {item.author}
+                    <br /> Completion Date: {item.date}
                   </label>
                   <p data-aos='fade-up-right'>{item.desc}</p>
                 </div>
